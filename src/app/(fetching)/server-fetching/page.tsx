@@ -23,8 +23,6 @@ import { POSTS_API_BASE_URL } from "@/constants";
   - In this mode, the page is pre-rendered at build time and remains static.
 */
 
-export const dynamic = "force-dynamic";
-
 const fetchProducts = async () => {
   // by default, no cache with ssr
   const res = await fetch(POSTS_API_BASE_URL, {
