@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-900 text-white;
+  }
+}
+
+@layer scrollbar {
+  *::-webkit-scrollbar {
+    @apply h-3.5 w-3.5;
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply rounded-lg;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply h-14 rounded-lg border-4 border-solid border-transparent bg-[#8d8d8d] bg-clip-content;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#ababab];
+  }
+
+  *::-webkit-scrollbar-corner {
+    @apply hidden;
+  }
+}
